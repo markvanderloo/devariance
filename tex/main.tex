@@ -1,0 +1,68 @@
+\documentclass[11pt, A4]{article}
+\usepackage[english]{babel}
+\usepackage{authblk}
+\usepackage{amsmath, amssymb}
+\usepackage{natbib}
+
+% voor todonotes
+% als documentclass 'final' wordt opgegeven worden de notes genegeerd.
+\usepackage[backgroundcolor=yellow, obeyFinal]{todonotes}
+% \todo{note in margin}
+% \todo[inline]{note op aparte regel}
+
+
+\author[1]{Lisanne Rijnveld} 
+\author[2]{Mark van der Loo} 
+\author[2]{Jeroen Pannekoek}
+
+\affil[1]{l.rijnveld@gmail.com, Oude of nieuwe werkgever Lisanne?}
+\affil[2]{m.vanderloo@cbs.nl, j.pannekoek@cbs.nl, Statistics Netherlands, PO box 24500 2490 HA The Hague}
+
+\date{\today}
+\title{Data Cleaning Variance}
+
+
+
+\begin{document}
+
+\maketitle{}
+\thispagestyle{empty}
+
+\begin{abstract}
+Hier komt de samenvatting.
+\end{abstract}
+
+\newpage{}
+
+\section{Introduction}
+\label{sect:introduction}
+\input{introduction}
+
+\section{Theory}
+\label{sect:theory}
+
+
+\input{theory}
+
+
+
+\section{Data and simulations}
+\label{sect:data}
+\input{data_simulation}
+
+\section{Discussion}
+\label{sect:discussion}
+\input{discussion}
+
+\section{Conclusions}
+\label{sect:conclusion}
+\input{conclusion}
+
+
+
+
+
+
+\bibliographystyle{chicago}
+\bibliography{devariance}
+\end{document}

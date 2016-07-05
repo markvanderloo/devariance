@@ -1,0 +1,50 @@
+
+It is widely known that statistical data editing (data cleaning) is an
+essential step in the production of accurate and reliable official statistics.
+Indeed, the impact on estimated values of data editing and imputation
+procedures has beem widely researched. \citet{whitridge2006impact} for example,
+show that imputation of missing values can have a significant effect on
+estimated totals of economic variables and \cite{loo2014towards} show that
+estimated means and naively estimated variances may vary significantly over a
+multi-step data editing process. \cite{dasu2012statistical} propose metrics to
+evaluate the impact of data cleaning based on distributional properties pre-
+and post data cleaning in the context of very large databases.\todo{Jeroen: heb jij
+hier nog wat extra referenties?}
+
+Besides the changes of estimated means, variances, and other distributional
+parameters in edited data, the precision of these estimates is influenced by
+data cleaning as well. In specific, the case of variance caused by imputation
+has received considerable attention over the last decades. The methods based on
+bayesian bootstrapping by \cite{rubin1987multiple,rubin1996multiple} and the
+resampling based methods of \cite{rao1992jackknife,rao1996variance}, and
+\citet{shao1996bootstrap}  \cite{shao2002sample,shao2008confidence} are amongst
+the most well-known. However, a statistical data editing process usually
+consists of a sequence of steps where estimation of missing values is just one
+of the steps performed.  Other steps, such as outlier detection, rule-based
+corrections, or error localization may well contain stochastic substeps or
+parameter estimations based on observed data that influence the variance of
+estimation.
+
+In this paper, the variance caused by data cleaning is therefore studied from a
+general point of view, abstracting away from the specific type of data cleaning
+step performed. In the next Section it is shown how data cleaning can be
+considered a part of the estimator of a parameter and details are provided on
+how data editing steps can contribute to the variance of estimation. A general
+bootstrap procedure is outlined that can be used to estimate the contribution
+of these steps.  Section~\ref{sect:data} provides the details of a simulation
+study on a economic (business survey) data set with a realistic set of editing
+constraints and sequence of methodologies. The results are discussed in
+Section~\ref{sect:discussion} and Section~\ref{sect:conclusion} presents
+general conclusions.
+
+
+
+
+
+
+
+
+
+
+
+

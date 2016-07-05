@@ -1,0 +1,7 @@
+tex/*.aux
+tex/*.log
+tex/*.bbl
+tex/*.blg
+
+tex/*.swp
+
