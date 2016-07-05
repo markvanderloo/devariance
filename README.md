@@ -1,2 +1,2 @@
 # devariance
-paper on data editing variance
+LaTeX source for paper on data editing variance
